@@ -23,7 +23,7 @@ def process_query(query):
     if elements[0] == 'Анфиса':
         return process_anfisa(elements[1])
     else:
-        return process_friend(name, query)
+        return process_friend(elements[0], elements[1])
     
 def process_anfisa(query):
             if query == 'сколько у меня друзей?':
