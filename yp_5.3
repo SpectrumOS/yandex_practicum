@@ -47,11 +47,11 @@ def process_friend(name, query):
     if name in DATABASE:
         if query == 'ты где?':
             city = DATABASE[name]
-            return(name, 'в городе ', city)     
+            return f'{name} в городе {city}'     
         else:
             return('<неизвестный запрос>')
     else:
-        print('У тебя нет друга по имени', name)
+        return f'У тебя нет друга по имени {name}'
             
 print('Привет, я Анфиса!')
 print(process_query('Анфиса, сколько у меня друзей?'))
